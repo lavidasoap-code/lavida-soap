@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Process - LaVida Soap Company</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/process-styles.css') }}">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <h1>LaVida Soaps</h1>
+        </div>
+        <ul>
+            <li><a href="{{ url_for('index') }}">Home</a></li>
+            <li><a href="{{ url_for('products') }}">Products</a></li>
+            <li><a href="{{ url_for('about') }}">About Us</a></li>
+            <li><a href="{{ url_for('process') }}">Our Process</a></li>
+            <li><a href="{{ url_for('contact') }}">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section class="page-header">
+        <h1>Our Soap Making Process</h1>
+        <p>Traditional methods meeting modern standards</p>
+    </section>
+
+    <section class="content-section">
+        <div class="process-container">
+            <div class="process-step">
+                <div class="step-number">01</div>
+                <div class="step-content">
+                    <h3>Ingredient Selection</h3>
+                    <p>We carefully select premium natural ingredients from trusted local suppliers. Our ingredients include:</p>
+                    <ul>
+                        <li>Pure Shea Butter from Northern Ghana</li>
+                        <li>Organic Coconut Oil</li>
+                        <li>Essential Oils</li>
+                        <li>Natural Colorants</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="process-step">
+                <div class="step-number">02</div>
+                <div class="step-content">
+                    <h3>Hand Mixing</h3>
+                    <p>Each batch is mixed with precision and care using traditional methods:</p>
+                    <ul>
+                        <li>Temperature-controlled mixing</li>
+                        <li>Small batch production</li>
+                        <li>Careful monitoring of saponification</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="process-step">
+                <div class="step-number">03</div>
+                <div class="step-content">
+                    <h3>Curing Process</h3>
+                    <p>Our soaps are cured for 4-6 weeks to ensure:</p>
+                    <ul>
+                        <li>Proper hardening</li>
+                        <li>Gentle pH levels</li>
+                        <li>Long-lasting quality</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="process-step">
+                <div class="step-number">04</div>
+                <div class="step-content">
+                    <h3>Quality Control</h3>
+                    <p>Every bar undergoes rigorous quality checks:</p>
+                    <ul>
+                        <li>pH testing</li>
+                        <li>Visual inspection</li>
+                        <li>Weight consistency</li>
+                        <li>Fragrance evaluation</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 LaVida Soap Company. All rights reserved.</p>
+    </footer>
+</body>
+</html>

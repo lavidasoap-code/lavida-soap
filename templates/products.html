@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Products - LaVida Soap Company</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <h1>LaVida Soaps</h1>
+        </div>
+        <ul>
+            <li><a href="{{ url_for('index') }}">Home</a></li>
+            <li><a href="{{ url_for('products') }}">Products</a></li>
+            <li><a href="{{ url_for('about') }}">About Us</a></li>
+            <li><a href="{{ url_for('process') }}">Our Process</a></li>
+            <li><a href="{{ url_for('contact') }}">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section class="page-header">
+        <h1>Our Natural Soap Collection</h1>
+        <p>Handcrafted with love and natural ingredients</p>
+    </section>
+
+    <section class="content-section">
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="{{ url_for('static', filename='images/Lavender-Dream-Soap.png') }}" alt="Lavender Dream Soap">
+                <h3>Lavender Dream Soap</h3>
+                <p>Calming lavender soap with essential oils</p>
+                <p class="description">Made with pure lavender essential oil, this soap helps promote relaxation and better sleep.</p>
+                <p class="price">GHC 25.00</p>
+                <div class="ingredients">
+                    <h4>Ingredients:</h4>
+                    <p>Shea butter, Coconut oil, Lavender essential oil, Natural colorants</p>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="{{ url_for('static', filename='images/Pure-Cinnamon-Soap.png') }}" alt="Pure Cinnamon Soap">
+                <h3>Pure Cinnamon Soap</h3>
+                <p>Rich in natural moisturizers</p>
+                <p class="description">Our bestselling soap made with authentic Ghanaian shea butter for maximum moisturizing.</p>
+                <p class="price">GHC 30.00</p>
+                <div class="ingredients">
+                    <h4>Ingredients:</h4>
+                    <p>Pure shea butter, Coconut oil, Palm oil, Natural fragrance</p>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="{{ url_for('static', filename='images/Charcoal-Detox-Soap.png') }}" alt="Charcoal Detox Soap">
+                <h3>Charcoal Detox Soap</h3>
+                <p>Deep cleansing with activated charcoal</p>
+                <p class="description">Perfect for deep cleansing and removing impurities from your skin.</p>
+                <p class="price">GHC 28.00</p>
+                <div class="ingredients">
+                    <h4>Ingredients:</h4>
+                    <p>Activated charcoal, Coconut oil, Tea tree oil, Essential oils</p>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="{{ url_for('static', filename='images/Citrus-Fresh-Soap.png') }}" alt="Citrus Fresh Soap">
+                <h3>Citrus Fresh Soap</h3>
+                <p>Energizing morning soap</p>
+                <p class="description">Start your day fresh with this energizing blend of citrus essential oils.</p>
+                <p class="price">GHC 25.00</p>
+                <div class="ingredients">
+                    <h4>Ingredients:</h4>
+                    <p>Orange essential oil, Lemon essential oil, Coconut oil, Natural colorants</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 LaVida Soap Company. All rights reserved.</p>
+    </footer>
+</body>
+</html>

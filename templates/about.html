@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - LaVida Soap Company</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <h1>LaVida Soaps</h1>
+        </div>
+        <ul>
+            <li><a href="{{ url_for('index') }}">Home</a></li>
+            <li><a href="{{ url_for('products') }}">Products</a></li>
+            <li><a href="{{ url_for('about') }}">About Us</a></li>
+            <li><a href="{{ url_for('process') }}">Our Process</a></li>
+            <li><a href="{{ url_for('contact') }}">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section class="page-header">
+        <h1>About LaVida Soaps</h1>
+        <p>Our story of natural skincare</p>
+    </section>
+
+    <section class="content-section">
+        <div class="about-content">
+            <img src="{{ url_for('static', filename='images/LaVida-Workshop.png') }}" alt="LaVida Soap Workshop" class="about-image">
+            <div class="about-text">
+                <h2>Our Story</h2>
+                <p>LaVida Soap Company began in 2020 with a simple mission: to create pure, natural soaps that nourish your skin and respect the environment. Located in the heart of Accra, we've grown from a small home-based operation to a trusted name in natural skincare.</p>
+                
+                <h2>Our Values</h2>
+                <ul class="values-list">
+                    <li>Natural Ingredients</li>
+                    <li>Environmental Responsibility</li>
+                    <li>Traditional Methods</li>
+                    <li>Local Sourcing</li>
+                </ul>
+
+                <h2>Our Commitment</h2>
+                <p>We source our ingredients from local suppliers, supporting Ghanaian farmers and ensuring the highest quality materials for our soaps. Each bar is handcrafted with care, maintaining traditional soap-making methods while incorporating modern sustainability practices.</p>
+
+                <h2>Community Impact</h2>
+                <p>LaVida Soap Company is proud to be part of the local community. We regularly conduct workshops to teach soap-making skills and provide employment opportunities to local artisans.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 LaVida Soap Company. All rights reserved.</p>
+    </footer>
+</body>
+</html>

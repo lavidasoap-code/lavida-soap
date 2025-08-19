@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LaVida Soap Company - Natural Handmade Soaps</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/new-styles.css') }}">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <h1>LaVida Soaps</h1>
+        </div>
+        <ul>
+            <li><a href="{{ url_for('index') }}">Home</a></li>
+            <li><a href="{{ url_for('products') }}">Products</a></li>
+            <li><a href="{{ url_for('about') }}">About Us</a></li>
+            <li><a href="{{ url_for('process') }}">Our Process</a></li>
+            <li><a href="{{ url_for('contact') }}">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section class="hero">
+        <h1>Natural & Handmade Soaps</h1>
+        <p>Experience the luxury of natural skincare with LaVida's handcrafted soaps</p>
+        <a href="products.html" class="cta-button">View Our Products</a>
+    </section>
+
+    <section class="featured-products content-section">
+        <div class="section-container">
+            <h2>Featured Products</h2>
+            <div class="product-grid">
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="{{ url_for('static', filename='images/LaVida-bathing-saop.png') }}" alt="LaVida Bathing Soap" class="product-img">
+                    </div>
+                    <div class="product-info">
+                        <h3>LaVida Bathing Soap</h3>
+                        <p class="product-description">Premium bathing soap for a refreshing experience</p>
+                        <p class="price">GHC 25.00</p>
+                        <a href="{{ url_for('products') }}" class="btn-secondary">Learn More</a>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="{{ url_for('static', filename='images/LaVida-Handwash.png') }}" alt="LaVida Hand Wash" class="product-img">
+                    </div>
+                    <div class="product-info">
+                        <h3>LaVida Hand Wash</h3>
+                        <p class="product-description">Gentle and effective hand wash</p>
+                        <p class="price">GHC 30.00</p>
+                        <a href="{{ url_for('products') }}" class="btn-secondary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="view-all">
+                <a href="{{ url_for('products') }}" class="cta-button">View All Products</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="why-choose-us content-section">
+        <div class="section-container">
+            <h2>Why Choose LaVida Soaps?</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <img src="{{ url_for('static', filename='images/100-natural.png') }}" alt="Natural Ingredients">
+                    </div>
+                    <h3>100% Natural</h3>
+                    <p>All our soaps are made with pure, natural ingredients</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <img src="{{ url_for('static', filename='images/handcrafted.png') }}" alt="Handmade">
+                    </div>
+                    <h3>Handcrafted</h3>
+                    <p>Each soap is carefully made by hand in small batches</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <img src="{{ url_for('static', filename='images/locally-sourced.png') }}" alt="Local">
+                    </div>
+                    <h3>Locally Sourced</h3>
+                    <p>We support local suppliers and use Ghanaian ingredients</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section content-section">
+        <div class="cta-container">
+            <h2>Experience Natural Skincare</h2>
+            <p>Visit our shop in East Legon, Accra</p>
+            <a href="{{ url_for('contact') }}" class="cta-button">Contact Us</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="{{ url_for('index') }}">Home</a></li>
+                    <li><a href="{{ url_for('products') }}">Products</a></li>
+                    <li><a href="{{ url_for('about') }}">About Us</a></li>
+                    <li><a href="{{ url_for('contact') }}">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section contact">
+                <h3>Contact Info</h3>
+                <p><i class="location-icon"></i>123 Soap Street</p>
+                <p>East Legon, Accra</p>
+                <p><i class="phone-icon"></i>Tel: +233 XX XXX XXXX</p>
+            </div>
+            <div class="footer-section hours">
+                <h3>Business Hours</h3>
+                <p><i class="clock-icon"></i>Mon-Fri: 9:00 AM - 6:00 PM</p>
+                <p>Sat: 10:00 AM - 4:00 PM</p>
+                <p>Sun: Closed</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 LaVida Soap Company. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>
